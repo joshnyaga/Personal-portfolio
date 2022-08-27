@@ -1,0 +1,63 @@
+.services .box-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.services .box-container .box {
+  background: var(--primary-bg-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  padding: 1rem;
+  width: 35rem;
+  text-align: center;
+  position: relative;
+  z-index: 0;
+}
+.services .box-container .box .number {
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+  font-size: 2.5rem;
+  color: var(--color-3);
+}
+.services {
+  text-transform: capitalize;
+}
+
+.services .box-container .box img {
+  height: 7rem;
+  width: 7rem;
+  margin: 1rem;
+}
+
+.services .box-container .box h3 {
+  font-size: 2rem;
+  color: var(--color-2);
+}
+
+.services .box-container .box p {
+  font-size: 1.5rem;
+  color: var(--color-1);
+  padding: 1rem;
+}
+
+.services .box-container .box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: var(--color-3);
+  z-index: -1;
+  clip-path: circle(25% at 0 0);
+  opacity: 0.1;
+  transition: 0.3s;
+}
+
+.services .box-container .box:hover::before {
+  clip-path: circle(100%);
+}

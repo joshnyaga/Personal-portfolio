@@ -1,0 +1,120 @@
+.about .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.about {
+  text-transform: capitalize;
+}
+.about .row .box {
+  flex: 1 1 43rem;
+  background-color: var(--color-3);
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  padding: 0.5rem 1.5rem;
+  margin: 1.5rem;
+}
+
+.about .row .box .title {
+  color: var(--color-1);
+  font-size: 2.5rem;
+  padding: 1rem 0;
+}
+
+.about .row .box .progress {
+  padding: 1rem 0;
+}
+
+.about .row .box .progress h3 {
+  font-size: 1.7rem;
+  color: var(--color-2);
+  display: flex;
+  justify-content: space-between;
+}
+
+.about .row .box .progress .bar {
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: 0.2rem solid var(--color-1);
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+
+.about .row .box .progress .bar span {
+  height: 100%;
+  border-radius: 0.3rem;
+  background-color: var(--color-1);
+  display: block;
+}
+
+.about .row .box:nth-child(1) .progress:nth-child(2) .bar span {
+  width: 95%;
+}
+
+.about .row .box:nth-child(1) .progress:nth-child(3) .bar span {
+  width: 80%;
+}
+
+.about .row .box:nth-child(1) .progress:nth-child(4) .bar span {
+  width: 65%;
+}
+
+.about .row .box:nth-child(1) .progress:nth-child(5) .bar span {
+  width: 75%;
+}
+
+.about .row .box:nth-child(2) .progress:nth-child(2) .bar span {
+  width: 98%;
+}
+
+.about .row .box:nth-child(2) .progress:nth-child(3) .bar span {
+  width: 67%;
+}
+
+.about .row .box:nth-child(2) .progress:nth-child(4) .bar span {
+  width: 75%;
+}
+
+.about .row .box:nth-child(2) .progress:nth-child(5) .bar span {
+  width: 60%;
+}
+
+.about .row .box .exp-box {
+  padding: 0 1.8rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  border-left: 0.2rem solid var(--main-color);
+  position: relative;
+}
+
+.about .row .box .exp-box h3 {
+  color: var(--main-color);
+  font-size: 2rem;
+}
+
+.about .row .box .exp-box p {
+  color: var(--secondary-text-color);
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.about .row .box .exp-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -1rem;
+  border-radius: 50%;
+  height: 2rem;
+  width: 2rem;
+  background: var(--main-color);
+}
+
+.about .download {
+  background: var(--primary-bg-color);
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 2rem;
+  padding-bottom: 3rem;
+  margin: 1rem;
+}

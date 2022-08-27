@@ -1,0 +1,21 @@
+.container-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40vh;
+}
+.container-home h1 {
+  font-size: 5rem;
+  text-align: center;
+}
+.container-home h2 {
+  font-size: 4rem;
+  text-align: center;
+}
+.container-home h2 span {
+  color: var(--color-2);
+}
+.container-home h3 {
+  font-size: 2rem;
+  text-align: center;
+}
