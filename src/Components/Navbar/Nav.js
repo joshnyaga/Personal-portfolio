@@ -5,7 +5,7 @@ const Nav = () => {
   return (
     <header className="header-home">
       <a href="#home" className="logo">
-        <span>JoshKay </span>
+        <span>JoshNyaga </span>
       </a>
 
       <input type="checkbox" id="menu-bar" />

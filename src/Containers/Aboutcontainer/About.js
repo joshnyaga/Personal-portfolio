@@ -1,5 +1,6 @@
 import React from "react";
 import "./about.css";
+import cv from "../../document/cv.pdf";
 const About = () => {
   return (
     <section className="about" id="about">
@@ -114,7 +115,7 @@ const About = () => {
       </div>
 
       <div className="download">
-        <a href="#" className="btn">
+        <a href={cv} className="btn">
           {" "}
           download CV{" "}
         </a>

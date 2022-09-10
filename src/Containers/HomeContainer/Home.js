@@ -9,7 +9,9 @@ const Home = () => {
           My name is <span>Joshua</span>.
         </h2>
         <h3>A Web Developer and a Mobile Developer</h3>
-        <button className="btn">See more</button>
+        <a href="#about" className="btn">
+          See more
+        </a>
       </div>
     </section>
   );
